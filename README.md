@@ -2,7 +2,7 @@
 
 Dieses Projekt beschreibt den Aufbau eines Soundsensors auf der Basis des Projektes LoraSoundkit (https://github.com/meekm/LoRaSoundkit)
 
-![alt text](https://github.com/CargoBikoMeter/LoRaSoundsensor/blob/main/AKIOT-Soundsensor--Balkon-02.jpeg))
+![alt text](https://github.com/CargoBikoMeter/LoRaSoundsensor/blob/main/AKIOT-Soundsensor--Balkon-02.jpeg)
 
 Soundsensor Bauanleitung
 ========================
