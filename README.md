@@ -17,9 +17,9 @@ Teile:
 - 5 x Drahtbrücke, isoliert
 - CPU: LILYGO® TTGO LoRa32 T3_V1.6.1
 - MEMS-Mikrofon: INMP441
-- Dupont Jumperkabel - BerryBase DUPK-40-FM-20
+- Dupont Jumperkabel - BerryBase DUPK-40-FM-20 (wird auf 14 cm gekürzt)
 - Stiftleiste 5-polig für MEMS-Mikrofon - BerryBase 1 x 40 polig, PINH-1X40P-90
-- 16 mm Plastikrohr OBI-Baumarkt für MES-Sensor 
+- 16 mm Plastikrohr OBI-Baumarkt für MES-Sensor (Stück mit 10 cm Länge abschneiden) 
 - M25 x 1,5 (37,3 mm x 25 mm) IP68 Kabelverschraubung für 16 mm Rohr, Emil Lux GmbH (OBI-Baumarkt)
 - UHU Plus Schnellfest 2-K-Expoxidharzkleber, 5 Minuten transparent
 - Mikrofonschutzmenbran 7 mm Durchmesser - LY-RN-AF04-700400-BD009 (Alibaba)
@@ -54,12 +54,11 @@ Es gilt folgende Belegung der Stiftleiste von oben gesehen, Stift 1 ist links, C
 |   4   | WS      | GPIO12 |  7OL  |
 |   5   | SCK     | GPIO35 |  3OR  |
 
-
 Der MEMS-Mikrofon-Anschluss L/R wird direkt am MEMS-Mikrofon mit GND verbunden.
 
 MEMS-Mikrofon verkabeln: 
   - den L/R-Anschluss am MEMS-Mikrofon mit GND verbinden
-  - MEMS-Mikrofon an das Dupont-Kabel anlöten (siehe Stiftleistenbelegung oben), dazu die Kabel auf der Steckerseite 16 cm Länge abschneiden, auf der anderen Seite müssen die Buchsen sein (Mikrofonloch zeigt nach außen)
+  - MEMS-Mikrofon an das gekürzte Dupont-Kabel anlöten (siehe Stiftleistenbelegung oben), dazu das Kabel von der Buchsenseite aus auf die Länge von 14 cm Länge kürzen (Hinweis: Mikrofonloch zeigt nach außen)
 
 USB-C Pigtail Kabel durch die PG7-Kabelverschraubung stecken, die vier Adern mit dem Mikro-USB Pigtail Kabel verlöten und im Kabelklemmblock fixieren
 CPU auf den Sockel stecken, Mikro-USB-Winkelstecker in CPU einstecken, Jumperkabel des Mikrofonrohres anstecken
@@ -86,7 +85,7 @@ Test bestanden, die Abweichung ist nicht größer als 2 dBA.
 
 Mikrofon im Rohr einkleben:
 
-Nun das MEMS-Mikrofon in das Plastikrohr mittels 2-Komponentenkleber mit 5 Minuten Verarbeitungszeit einkleben. Zum Schutz des außen liegenden Mikrofoneingangs vor externer Feuchtigkeit wird dieser mit der runden Mikrofonschutzmenbran ( 7 mm ) abgedeckt. Das Plastikrohr vorne innen etwas aufrauen. Jeweils 1 cm Komponentenkleber mischen und in das Rohr am Rand einfüllen. Das MEMS-Mikrofon vorsichtig an den Jumperkabeln hineinziehen. Vorsichtig etwas Expoxidharzkleber auf die Außenseite des Sensors auftragen, um die Leiterbahnen gegen Witterungseinflüsse zu versiegeln (BEACHTE: Kleber NICHT auf die Mikrofonschutzmenbran auftragen!). Das Rohr senkrecht minimal 5 Minuten festhalten, damit der Kleber nach unter läuft. 
+Nun das MEMS-Mikrofon in das 10 cm lange Plastikrohr mittels 2-Komponentenkleber mit 5 Minuten Verarbeitungszeit einkleben. Zum Schutz des außen liegenden Mikrofoneingangs vor externer Feuchtigkeit wird dieser mit der runden Mikrofonschutzmenbran ( 7 mm ) abgedeckt. Das Plastikrohr vorne innen etwas aufrauen. Jeweils 1 cm Komponentenkleber mischen und in das Rohr am Rand einfüllen. Das MEMS-Mikrofon vorsichtig an den Jumperkabeln hineinziehen. Vorsichtig etwas Expoxidharzkleber auf die Außenseite des Sensors auftragen, um die Leiterbahnen gegen Witterungseinflüsse zu versiegeln (BEACHTE: Kleber NICHT auf die Mikrofonschutzmenbran auftragen!). Das Rohr senkrecht minimal 5 Minuten festhalten, damit der Kleber nach unter läuft. 
 
 Nach ca. 5 Minuten ist der Kleber handfest ausgehärtet. Kleber vollständig aushärten lassen, erst danach das Mikrofonrohr ins Gehäuse einbauen
   
@@ -95,6 +94,8 @@ Nach Trocknung des Komponentenklebers das Plastikrohr mit dem MEMS-Mikrofon in d
 Zum Abschluss den finalen Test nochmals mit dem Soundlevel Meter durchführen.
 
 Vor der Integration des Sensors in das TheThingsNetwork (TTN) den Parameter CYCLETIME 240 setzen, damit die [Fair Use Policy](https://www.thethingsnetwork.org/forum/t/fair-use-policy-explained/1300) des TTN nicht verletzt wird. Dadurch sendet der Sensor die Daten alle vier Minuten über das TTN. 
+
+Die Beschreibung der TTN-Konfiguration und Weiterleitung der Messdaten zu openSenseMap.org erfolgt demnächst hier.
 
 HINWEIS: Die obige Aufbauanleitung ist ohne Gewähr!
 
