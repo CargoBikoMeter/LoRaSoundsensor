@@ -38,10 +38,10 @@ Aufbau:
 - Kabelverschraubung PG7 unten links und die Druckausgleichsschraube unten rechts in die Plastikstopfen des Gehäuses einbauen. Dazu in die Stopfen passende Löcher schneiden.
 
 - Platine bestücken
-  - 13er Pin-Headers auf die CPU stecken und die CPU ganz links und unten auf der Platine positionieren und Pin-Header anlöten
-  - beide Kabelklemmblöcke links hochkant über der CPU einstecken und anlöten, vorher Lötauge mit 1.0 mm Bohrer aufbohren
+  - 13er Pin-Headers auf die CPU stecken und die CPU im dritten Pin links und unten auf der Platine positionieren und Pin-Header anlöten
+  - beide Kabelklemmblöcke mit der Nut zusammenstecken und links hochkant über der CPU mit den Kabelöffnungen nach außen einstecken und anlöten
   - von der gewinkelten Stiftleiste eine 5-polige Leiste abknipsen
-  - Stiftleiste mit dem kurzen Stift einlöten.
+  - Stiftleiste mit dem kurzen Stift in der neunten Reihe von links und dritten Reihe von oben einlöten
   - 100µF Elko in Pins anlöten, Minus an linken Stift (von oben gesehen), Plus an Stift rechts daneben
   - 100nF Kondensator parallel zum Elko anlöten
 
@@ -63,6 +63,8 @@ MEMS-Mikrofon verkabeln:
 USB-C Pigtail Kabel durch die PG7-Kabelverschraubung stecken, die vier Adern mit dem Mikro-USB Pigtail Kabel verlöten und im Kabelklemmblock fixieren
 CPU auf den Sockel stecken, Mikro-USB-Winkelstecker in CPU einstecken, Jumperkabel des Mikrofonrohres anstecken
 USB-C Pigtail Kabel mittels USB-C-Adapter mit USB-C-Flachbandkabel verbinden am PC anschließen
+
+Tip: Um die korrekte Funktion der angelöteten Mikrofonkabel zu testen, können die Jumper direkt auf die jeweiligen PINs der CPU gesteckt werden.
 
 Test:
   - in PlatformIO den Parameter CYCLETIME 60 setzen, damit Testmessungen gemacht werden können
